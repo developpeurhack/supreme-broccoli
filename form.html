@@ -1,0 +1,232 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+ </head>
+
+  <body>
+    <header>
+      <div class="container">
+       <nav class="nav_checkbox">
+           <a href="" class="logo"><img src="images/left.png" alt=""></a>
+          <input type="checkbox" id="tab-nav" class="tab-nav">
+          <label for="tab-nav" class="label">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </label>
+          <ul class="content_nav">
+            <li>
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#Pizza">Pizza</a>
+            </li>
+            <li>
+              <a href="#Burgers">Burgers</a>
+            </li>
+            <li>
+              <a href="#Salade">Salade</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </nav>
+
+       </div>
+    </header>
+    <section class="content_section">
+      <img src="images/Rectangle 48 2.png" alt="">
+
+      <div class="title">
+        <h3>food app</h3>
+        <h1 class="add">chaque désire s'additionne</h1>
+        <h1>chez bella
+        </h1>
+      </div>
+<!---------formulaire------------------->
+<form action="traitement.php" method="post" name="form" class="form">  
+  <h1 class="contact">Vos-informations</h1>
+<div class="infos">
+    <div class="info1">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" placeholder="votre nom" required="required">
+      <label for="text" >telephone</label>
+      <input type="text" id="tel" placeholder=" telephone " pattern="^(\\+33|0|0033)[1-9][0-9]{8}$" required="required">
+    </div>
+      
+
+  <div class="info2">
+    <label for="prenom">Prénom :</label>
+     <input type="text" id="prenom" placeholder="votre prénom" required="required">
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" placeholder="votre e-mail" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required="required">
+  </div>
+ </div> 
+<hr>
+<h1 class="contact">Votre commande</h1>
+<p> Suppliments</p>
+  <div class="commandes">
+     <div class="commande1">
+        <div class="ingrediants">
+              <label for="coca">ingrediants</label>
+              <select id="coca" name="coca">
+                    <option value="1">fromage</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+              </select>
+        </div>
+        <div class="ingrediants">
+              <label for="coca">ingrediants</label>
+              <select id="coca" name="coca">
+                    <option value="1">fromage</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+              </select>
+        </div>
+        <div class="ingrediants">
+              <label for="coca">ingrediants</label>
+              <select id="coca" name="coca">
+                    <option value="1">fromage</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+              </select>
+        </div>
+        <div class="ingrediants">
+              <label for="coca">ingrediants</label>
+              <select id="coca" name="coca">
+                    <option value="1">fromage</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+              </select>
+        </div>
+      
+
+      </div>
+    <div class="commande2">
+        <label for="quantité">Quantities</label>
+        <input type="text" id="quantité" placeholder="1" required="required">
+        <label for="quantité">Quantities</label>
+        <input type="text" id="quantité" placeholder="1" required="required">
+        <label for="quantité">Quantities</label>
+        <input type="text" id="quantité" placeholder="1" required="required">
+        <label for="quantité">Quantities</label>
+        <input type="text" id="quantité" placeholder="1" required="required">
+    </div> 
+  </div>
+
+
+<p class="addition">
+  <input type="checkbox" name="choix">
+ Avec frites
+  <input type="checkbox" name="choix">
+ Sans frites 
+</p>
+
+
+<div class="row">
+  <div class="one">
+    
+    <h1>Boissons</h1>
+
+            <div class="boisson">
+               <input type="checkbox" name="checkbox" checked>
+               <label for="coca">Coca cola</label>
+                  <select id="coca" name="coca">
+                         <option value="1">1</option>
+                           <option value="2">2</option>
+                          <option value="3">3</option>
+                  </select>
+              </div>
+              <div class="boisson">
+                    <input type="checkbox" name="checkbox">
+                    <label for="fanta">Fanta</label>
+                      <select id="fanta" name="fanta">
+                          <option value="1">1</option>
+                           <option value="2">2</option>
+                          <option value="3">3</option>
+                      </select>
+                </div>
+                 <div class="boisson">
+                      <input type="checkbox" name="checkbox">
+                        <label for="eau">L'eau</label>
+                        <select id="eau" name="eau">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                   </div>
+        </div>
+
+        <div class="two">
+                    <h1>Desserts</h1>
+                    <div class="dessert">
+                          <input type="checkbox" name="checkbox" checked>
+                          <label for="Tiramiseau">Tiramiseau</label>
+                          <select id="Tiramiseau" name="Tiramiseau">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                              <option value="3">3</option>
+                          </select>
+                      </div>
+                      <div class="dessert">
+                              <input type="checkbox" name="checkbox">
+                              <label for="cheese">Cheese-cake</label>
+                              <select id="cheese" name="cheese">
+                                    <option value="1">1</option>
+                                    <option value="2">2</optio>
+                                  <option value="3">3</option>
+                              </select>
+                      </div>
+                      <div class="dessert">
+                                <input type="checkbox" name="checkbox">
+                                 <label for="tarte">Tarte au fraise</label>
+                                  <select id="tarte" name="tarte">
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                      <option value="3">3</option>                                
+                                    </select>
+                   </div>
+          </div>
+    </div>
+<hr>
+<h1>Adresse de livraison</h1>
+  <div class="adress">
+        <div class="part1">
+                <label for="nom">Nom</label>
+              <input type="text" id="nom" placeholder="votre nom" required="required">
+                <label for="tel">telephone</label>
+              <input type="text" id="tel" placeholder="telephone" required="required">
+                <label for="adresse" class="row">Adresse</label>
+              <input type="text" id="adresse" placeholder="votre adresse" required="required">
+                <label for="ville">Ville</label>
+              <input type="text" id="ville" placeholder="votre ville" required="required">
+        </div> 
+        <div class="part2">
+                <label for="prenom">Prénom </label>
+              <input type="text" id="prenom" placeholder="votre prénom" required="required">
+                <label for="email" class="row">E-mail </label>
+              <input type="email" id="email" placeholder="votre e-mail"  required="required">
+               <label for="cp" class="row">Code postal</label>
+              <input type="text" id="cp" placeholder="votre code postal" required="required">
+                <label for="pays" class="row">Pays </label>
+              <input type="text" id="pays" placeholder="votre pays" required="required">
+       </div>
+   <!---<div class="btn_primary">
+  <a href="">Envoyer</a> --->
+</form>
+ 

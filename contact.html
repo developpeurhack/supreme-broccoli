@@ -1,0 +1,141 @@
+ 
+ <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+
+ </head>
+
+  <body>
+    <header>
+      <div class="container">
+       <nav class="nav_checkbox">
+           <a href="" class="logo"><img src="images/left.png" alt=""></a>
+          <input type="checkbox" id="tab-nav" class="tab-nav">
+          <label for="tab-nav" class="label">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </label>
+          <ul class="content_nav">
+            <li>
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#Pizza">Pizza</a>
+            </li>
+            <li>
+              <a href="#Burgers">Burgers</a>
+            </li>
+            <li>
+              <a href="#Salade">Salade</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </nav>
+
+       </div>
+    </header>
+    <section class="content_section">
+      <img src="images/Rectangle 48 2.png" alt="">
+
+      <div class="title">
+        <h3>food app</h3>
+        <h1 class="add">chaque désire s'additionne</h1>
+        <h1>chez bella
+        </h1>
+      </div>
+ <!---------formulaire------------------->
+  <form action="traitement.php" method="post" name="form" class="form">
+    <h1>Nous Contactez </h1>
+<div class="AB">
+  <div class="A">
+ 
+            <label for="nom">Nom </label>
+         <div>
+
+            <input type="text" id="nom" placeholder="votre nom" required="required">
+        </div>
+      
+          <label for="tel">telephone </label>
+        <div>
+
+        <input type="text" id="tel" placeholder="telephone" required="required">
+        </div>
+   
+    
+        <label for="societe">Sociéte</label>
+        <div>
+
+          <input type="text" id="societe" placeholder="Societe" required="required">
+        </div>
+
+ </div>
+ <div class="B">   
+        <label for="prenom">Prénom</label>
+        <div>
+
+          <input type="text" id="prenom" placeholder="prenom"  required="required">
+        </div>
+    
+    
+      <label for="email">Email </label>
+      <div>
+
+        <input type="email" id="email" placeholder="email" 
+        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required="required">
+      </div>
+    
+      <label for="fonction">Fonction</label>
+      <div>
+
+        <input type="text" id="fonction" placeholder="Cuisinier"  required="required">
+      </div>
+  </div>
+</div> 
+    <div>
+         <label for="file">Upload</label>
+         <input type="file" id="file" name="file" multiple="multiple">
+    </div>
+    <div class="g-recaptcha" data-sitekey="your_site_key">Re-captcha</div>
+    
+    <!----<div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+    </div>--->
+    <div class="objet">
+
+      <label for="objet">Objet </label>
+      <div>
+
+        <input type="text" id="objet" placeholder="votre objet" required="required">
+      </div>
+  
+      <label for="message">Message </label>
+      <textarea name="message" id="message" placeholder=" message  " cols="40" rows="20"></textarea>
+    </div>
+  </div>
+
+ </div>
+    <div class="map">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d41975.53050531124!2d2.2697039278071407!3d48.88736684819885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1614036779226!5m2!1sfr!2sfr" frameborder="0"></iframe>
+    </div>
+  
+
+  </form>
+    <div class="btn">
+      <a href="#">envoyer</a>
+    </div>
+</main>
